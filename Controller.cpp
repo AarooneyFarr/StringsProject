@@ -12,21 +12,27 @@
 
 using namespace std;
 
+Controller :: Controller()
+{
+    derpy = "Heloo";
+    word = "world";
+}
+
 void Controller :: start()
 {
-    cout << tryString("Hello") << endl;
-    cout << stringSize("world") << endl;
+    cout << tryString(derpy) << endl;
+    cout << stringSize(word) << endl;
     
     
 }
 
-char Controller :: tryString(char input[20])
+string Controller :: tryString(string input)
 {
-    char str[1] = input.at(0);
-   return str;
+    string str = &input.at(2);
+    return str;
 }
 
-int Controller :: stringSize(char input[20])
+int Controller :: stringSize(string input)
 {
-    return &input.size();
+    return input.size();
 }

@@ -9,15 +9,21 @@
 #ifndef Controller_h
 #define Controller_h
 
+#include <string>
+
+using namespace std;
+
 class Controller
 {
 public:
     void start();
+    Controller();
+    
 private:
-    char tryString(char input[20]);
-    
-    
-    int stringSize(char input[20]);
+    string tryString(string input);
+    string derpy;
+    string word;
+    int stringSize(string input);
 };
 
 #endif /* Controller_h */
