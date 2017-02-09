@@ -24,6 +24,10 @@ private:
     string derpy;
     string word;
     int stringSize(string input);
+    bool stringEmpty(string input);
+    string subString(string input, int start, int end);
+    string subString(string input, int start);
+    bool stringsEqual(string inputOne, string inputTwo);
 };
 
 #endif /* Controller_h */
